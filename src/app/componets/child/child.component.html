@@ -1,0 +1,22 @@
+<mat-card class="prdcard">
+    <div style="padding-left: 15px;">
+        <span style="font-size: 15px; font-family: 'Courier New', Courier, monospace; font-weight: 700;">Geting Data from Parent and sending data to child to Display</span>
+    </div>
+    <mat-card-header style="padding-top: 15px;">
+        <mat-card-title>
+            <span>{{childData.username}}</span>
+        </mat-card-title>
+        <mat-card-subtitle>
+            {{childData.company.name}}
+        </mat-card-subtitle>
+    </mat-card-header>
+    <div>
+        <div style="padding-left: 15px;">
+            <span>{{childData.company.catchPhrase}}</span>
+        </div>
+    </div>
+    <mat-card-footer fxLayout="row" fxLayoutAlign="end center">
+            <button mat-button color="primary">submit</button>
+    </mat-card-footer>
+</mat-card>
+
